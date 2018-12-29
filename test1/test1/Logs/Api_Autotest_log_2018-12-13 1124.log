@@ -1,0 +1,168 @@
+ Thu, 13 Dec 2018 11:24:35  INFO myLogger2.py <module> [ line:19 ] This is logging
+ Thu, 13 Dec 2018 11:24:35  INFO test_add.py test1 [ line:32 ] ==============开始执行一个接口测试用例，请求数据如下===============
+ Thu, 13 Dec 2018 11:24:35  INFO test_add.py test1 [ line:33 ] 接口请求地址：http://47.99.40.208:9010/app/order/createOrderApp
+ Thu, 13 Dec 2018 11:24:35  INFO test_add.py test1 [ line:34 ] 接口请求类型：post
+ Thu, 13 Dec 2018 11:24:35  INFO test_add.py test1 [ line:35 ] 接口请求数据为：{"isSure": "true","goodsCode": "651cdf2d1a284761b2c99ecb88dc18e7","goodsHistoryCode": "929120d2bf6e4bb698c3dbc3500530d7","goodsSkuRelCode": "hoursRent","gameCode":"973594c8026f48f68fe10f8ce9a1cdc8","buyType":"2","beginTime":"2018-12-13 12:24:35","finishTime":"2018-12-13 13:24:35","totalAmount":"0.02","goodsAmount":"0.01","pledgeAmount":"0.01","groupName":"时租","show":"false","countTime":"3","description":"温馨提示：交易猫工作人员不会以任何理由在游戏里向所要任何游戏账号、交易猫账号、游戏物品等。请提防诈骗信息，祝您游戏愉快！"}
+ Thu, 13 Dec 2018 11:24:35  INFO myHeader.py Get_token_session [ line:10 ] {'token': '70695fad199a44e5a08fb98f7c72127d', 'cookie': 'SESSION=af1280d4-5782-49cd-a2cc-7a7ff3e420ff'}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:44 ] {"success":true,"code":null,"message":null,"data":{"payStr":"<form name=\"punchout_form\" method=\"post\" action=\"https://openapi.alipay.com/gateway.do?charset=utf-8&method=alipay.trade.wap.pay&sign=kLZt1ydY73Zu%2BUkFHGoCJb%2BzGy3SWBhI81kLVRMaGQAlQbo2Aw%2BNQpaMC8D3AkTvK%2FkyGRWNW0Vg8CtIhbdFvrFkYPzdCv%2BuKjaWRL1ZpR9V3loYmLu7JFiYO3vhudobJS5T%2F8RRi7Oq2QLCJpsGH4cVyxQMPY6zSAG61SWCBrV3q9vPDg0oXpDbv1UZVAMEJjkhuajl75tZqg%2F6jd6LWFaQRLOrpy7K%2F%2FYgvcfacra%2FAxhSO%2Firlf%2BxicmxjdCv9mwbzk2OthJd4hpRREpKxGnOhkDWWj1g8YO9NkNxHcJNO9eWGKAmCPAANnrEhCW5ciBSouA1OAfvpneCqriRVQ%3D%3D&return_url=http%3A%2F%2F47.99.40.208%3A9010%2FpayResults%3ForderId%3D20181213112436AS&notify_url=http%3A%2F%2F47.99.40.208%3A9008%2Frest%2Falipay%2FpayNotify&version=1.0&app_id=2018062960438354&sign_type=RSA2&timestamp=2018-12-13+11%3A24%3A36&alipay_sdk=alipay-sdk-java-dynamicVersionNo&format=json\">\n<input type=\"hidden\" name=\"biz_content\" value=\"{&quot;body&quot;:&quot;订单号：20181213112436AS，游戏：8.3上号器测试，套餐：时租*1&quot;,&quot;goods_type&quot;:&quot;0&quot;,&quot;out_trade_no&quot;:&quot;a37d4b4237f641faae991bce3c4b9dd0&quot;,&quot;product_code&quot;:&quot;QUICK_WAP_WAY&quot;,&quot;subject&quot;:&quot;交易猫租号平台租号交易&quot;,&quot;timeout_express&quot;:&quot;30m&quot;,&quot;total_amount&quot;:&quot;0.02&quot;}\">\n<input type=\"submit\" value=\"立即支付\" style=\"display:none\" >\n</form>\n<script>document.forms[0].submit();</script>","orderCode":"20181213112436AS"}}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:46 ] 本次接口请求的状态码为：200
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:47 ] 接口请求的返回数据为：
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:48 ] {"success":true,"code":null,"message":null,"data":{"payStr":"<form name=\"punchout_form\" method=\"post\" action=\"https://openapi.alipay.com/gateway.do?charset=utf-8&method=alipay.trade.wap.pay&sign=kLZt1ydY73Zu%2BUkFHGoCJb%2BzGy3SWBhI81kLVRMaGQAlQbo2Aw%2BNQpaMC8D3AkTvK%2FkyGRWNW0Vg8CtIhbdFvrFkYPzdCv%2BuKjaWRL1ZpR9V3loYmLu7JFiYO3vhudobJS5T%2F8RRi7Oq2QLCJpsGH4cVyxQMPY6zSAG61SWCBrV3q9vPDg0oXpDbv1UZVAMEJjkhuajl75tZqg%2F6jd6LWFaQRLOrpy7K%2F%2FYgvcfacra%2FAxhSO%2Firlf%2BxicmxjdCv9mwbzk2OthJd4hpRREpKxGnOhkDWWj1g8YO9NkNxHcJNO9eWGKAmCPAANnrEhCW5ciBSouA1OAfvpneCqriRVQ%3D%3D&return_url=http%3A%2F%2F47.99.40.208%3A9010%2FpayResults%3ForderId%3D20181213112436AS&notify_url=http%3A%2F%2F47.99.40.208%3A9008%2Frest%2Falipay%2FpayNotify&version=1.0&app_id=2018062960438354&sign_type=RSA2&timestamp=2018-12-13+11%3A24%3A36&alipay_sdk=alipay-sdk-java-dynamicVersionNo&format=json\">\n<input type=\"hidden\" name=\"biz_content\" value=\"{&quot;body&quot;:&quot;订单号：20181213112436AS，游戏：8.3上号器测试，套餐：时租*1&quot;,&quot;goods_type&quot;:&quot;0&quot;,&quot;out_trade_no&quot;:&quot;a37d4b4237f641faae991bce3c4b9dd0&quot;,&quot;product_code&quot;:&quot;QUICK_WAP_WAY&quot;,&quot;subject&quot;:&quot;交易猫租号平台租号交易&quot;,&quot;timeout_express&quot;:&quot;30m&quot;,&quot;total_amount&quot;:&quot;0.02&quot;}\">\n<input type=\"submit\" value=\"立即支付\" style=\"display:none\" >\n</form>\n<script>document.forms[0].submit();</script>","orderCode":"20181213112436AS"}}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:59 ] 接口请求的期望数据为：
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:60 ] {"success":true.*}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:61 ] 期望结果与实际结果的比对方式为：
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:72 ] 正则表达式匹配模式。
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:75 ] ========================结束一个接口测试用例==========================
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:32 ] ==============开始执行一个接口测试用例，请求数据如下===============
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:33 ] 接口请求地址：http://47.99.40.208:9010/app/order/createOrderApp
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:34 ] 接口请求类型：post
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:35 ] 接口请求数据为：{"isSure": "true","goodsCode": "651cdf2d1a284761b2c99ecb88dc18e7","goodsHistoryCode": "929120d2bf6e4bb698c3dbc3500530d7","goodsSkuRelCode": "hoursRent","gameCode":"973594c8026f48f68fe10f8ce9a1cdc8","buyType":"2","beginTime":"2018-10-7 23:00:00","finishTime":"2018-10-8 00:00:00","totalAmount":"0.02","goodsAmount":"0.01","pledgeAmount":"0.01","groupName":"时租","show":"false","countTime":"3","description":"温馨提示：交易猫工作人员不会以任何理由在游戏里向所要任何游戏账号、交易猫账号、游戏物品等。请提防诈骗信息，祝您游戏愉快！"}
+ Thu, 13 Dec 2018 11:24:36  INFO myHeader.py Get_token_session [ line:10 ] {'token': 'f3b393a5933845799258a83cf1269c68', 'cookie': 'SESSION=af62aa53-c421-45d5-87a4-94fecc3aae63'}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:44 ] {"success":false,"code":"param is empty","message":"预约时间已过期，请重新选择！","data":null}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:46 ] 本次接口请求的状态码为：200
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:47 ] 接口请求的返回数据为：
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:48 ] {"success":false,"code":"param is empty","message":"预约时间已过期，请重新选择！","data":null}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:59 ] 接口请求的期望数据为：
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:60 ] {"success":false.*"message":"预约时间已过期，请重新选择！".*}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:61 ] 期望结果与实际结果的比对方式为：
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:72 ] 正则表达式匹配模式。
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:75 ] ========================结束一个接口测试用例==========================
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:32 ] ==============开始执行一个接口测试用例，请求数据如下===============
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:33 ] 接口请求地址：http://47.99.40.208:9010/app/order/createOrderApp
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:34 ] 接口请求类型：post
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:35 ] 接口请求数据为：{"isSure": "true","goodsCode": "651cdf2d1a284761b2c99ecb88dc18e7","goodsHistoryCode": "929120d2bf6e4bb698c3dbc3500530d7","goodsSkuRelCode": "hoursRent","gameCode":"973594c8026f48f68fe10f8ce9a1cdc8","buyType":"2","beginTime":"2028-10-7 23:00:00","finishTime":"2028-10-8 00:00:00","totalAmount":"0.02","goodsAmount":"0.01","pledgeAmount":"0.01","groupName":"时租","show":"false","countTime":"3","description":"温馨提示：交易猫工作人员不会以任何理由在游戏里向所要任何游戏账号、交易猫账号、游戏物品等。请提防诈骗信息，祝您游戏愉快！"}
+ Thu, 13 Dec 2018 11:24:36  INFO myHeader.py Get_token_session [ line:10 ] {'token': 'c95716a4a0dd406f87bac32a2ca97e4b', 'cookie': 'SESSION=78348ee6-3bd3-4e3e-9685-a755684af42c'}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:44 ] {"success":true,"code":null,"message":null,"data":{"payStr":"<form name=\"punchout_form\" method=\"post\" action=\"https://openapi.alipay.com/gateway.do?charset=utf-8&method=alipay.trade.wap.pay&sign=N0b%2BmgjJmirFc4WPX58F4qWZvq%2Fy%2BJmcblQGLsakrA6i8jB92jbjPWr5yHKRpUXXHrXqaFhHSGI0JCTB8t1H2VZ8hkWPcPqzWhAOY5%2BUG2u72l%2BR0BDV33Ly9zL%2BcuViqm4eK0gPRGiog%2FF7VzcGmulbKupV7Xp826O0w3cvoo0QAMpcrqhtAEEx3zAoZlApycEUb3TnuJ8voQrQ735uWEL6hyWX9aMVFvJrCIzPF0F32t3v3DNmQo7ZGHUl0fvro0SH%2FoVBjF38ag1xyYEm7YLtVUYJyTdCMMMX5sAyJldHA4H84o8%2FMKnJ%2BGeDczHAW9ry%2FSuitpjaM77LxEpaBw%3D%3D&return_url=http%3A%2F%2F47.99.40.208%3A9010%2FpayResults%3ForderId%3D20181213112436HX&notify_url=http%3A%2F%2F47.99.40.208%3A9008%2Frest%2Falipay%2FpayNotify&version=1.0&app_id=2018062960438354&sign_type=RSA2&timestamp=2018-12-13+11%3A24%3A36&alipay_sdk=alipay-sdk-java-dynamicVersionNo&format=json\">\n<input type=\"hidden\" name=\"biz_content\" value=\"{&quot;body&quot;:&quot;订单号：20181213112436HX，游戏：8.3上号器测试，套餐：时租*1&quot;,&quot;goods_type&quot;:&quot;0&quot;,&quot;out_trade_no&quot;:&quot;874912cdeb4b49f1acd0d4f8da173d50&quot;,&quot;product_code&quot;:&quot;QUICK_WAP_WAY&quot;,&quot;subject&quot;:&quot;交易猫租号平台租号交易&quot;,&quot;timeout_express&quot;:&quot;30m&quot;,&quot;total_amount&quot;:&quot;0.02&quot;}\">\n<input type=\"submit\" value=\"立即支付\" style=\"display:none\" >\n</form>\n<script>document.forms[0].submit();</script>","orderCode":"20181213112436HX"}}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:46 ] 本次接口请求的状态码为：200
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:47 ] 接口请求的返回数据为：
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:48 ] {"success":true,"code":null,"message":null,"data":{"payStr":"<form name=\"punchout_form\" method=\"post\" action=\"https://openapi.alipay.com/gateway.do?charset=utf-8&method=alipay.trade.wap.pay&sign=N0b%2BmgjJmirFc4WPX58F4qWZvq%2Fy%2BJmcblQGLsakrA6i8jB92jbjPWr5yHKRpUXXHrXqaFhHSGI0JCTB8t1H2VZ8hkWPcPqzWhAOY5%2BUG2u72l%2BR0BDV33Ly9zL%2BcuViqm4eK0gPRGiog%2FF7VzcGmulbKupV7Xp826O0w3cvoo0QAMpcrqhtAEEx3zAoZlApycEUb3TnuJ8voQrQ735uWEL6hyWX9aMVFvJrCIzPF0F32t3v3DNmQo7ZGHUl0fvro0SH%2FoVBjF38ag1xyYEm7YLtVUYJyTdCMMMX5sAyJldHA4H84o8%2FMKnJ%2BGeDczHAW9ry%2FSuitpjaM77LxEpaBw%3D%3D&return_url=http%3A%2F%2F47.99.40.208%3A9010%2FpayResults%3ForderId%3D20181213112436HX&notify_url=http%3A%2F%2F47.99.40.208%3A9008%2Frest%2Falipay%2FpayNotify&version=1.0&app_id=2018062960438354&sign_type=RSA2&timestamp=2018-12-13+11%3A24%3A36&alipay_sdk=alipay-sdk-java-dynamicVersionNo&format=json\">\n<input type=\"hidden\" name=\"biz_content\" value=\"{&quot;body&quot;:&quot;订单号：20181213112436HX，游戏：8.3上号器测试，套餐：时租*1&quot;,&quot;goods_type&quot;:&quot;0&quot;,&quot;out_trade_no&quot;:&quot;874912cdeb4b49f1acd0d4f8da173d50&quot;,&quot;product_code&quot;:&quot;QUICK_WAP_WAY&quot;,&quot;subject&quot;:&quot;交易猫租号平台租号交易&quot;,&quot;timeout_express&quot;:&quot;30m&quot;,&quot;total_amount&quot;:&quot;0.02&quot;}\">\n<input type=\"submit\" value=\"立即支付\" style=\"display:none\" >\n</form>\n<script>document.forms[0].submit();</script>","orderCode":"20181213112436HX"}}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:59 ] 接口请求的期望数据为：
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:60 ] {"success":false.*}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:61 ] 期望结果与实际结果的比对方式为：
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:72 ] 正则表达式匹配模式。
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:32 ] ==============开始执行一个接口测试用例，请求数据如下===============
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:33 ] 接口请求地址：http://47.99.40.208:9010/app/order/createOrderApp
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:34 ] 接口请求类型：post
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:35 ] 接口请求数据为：{"isSure": "true","goodsCode": "651cdf2d1a284761b2c99ecb88dc18e7","goodsHistoryCode": "929120d2bf6e4bb698c3dbc3500530d7","goodsSkuRelCode": "hoursRent","gameCode":"973594c8026f48f68fe10f8ce9a1cdc8","buyType":"2","beginTime":"2018-11-2 23:00:00","finishTime":"2018-11-3 00:00:00","totalAmount":"0.05","goodsAmount":"0.01","pledgeAmount":"0.01","groupName":"时租","show":"false","countTime":"3","description":"温馨提示：交易猫工作人员不会以任何理由在游戏里向所要任何游戏账号、交易猫账号、游戏物品等。请提防诈骗信息，祝您游戏愉快！"}
+ Thu, 13 Dec 2018 11:24:36  INFO myHeader.py Get_token_session [ line:10 ] {'token': 'ef59b4183a9d4ba799674ccc2cbad160', 'cookie': 'SESSION=181f4af1-c75c-4780-bcc7-9267c6449f85'}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:44 ] {"success":false,"code":"param is empty","message":"预约时间已过期，请重新选择！","data":null}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:46 ] 本次接口请求的状态码为：200
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:47 ] 接口请求的返回数据为：
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:48 ] {"success":false,"code":"param is empty","message":"预约时间已过期，请重新选择！","data":null}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:59 ] 接口请求的期望数据为：
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:60 ] {"success":false.*}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:61 ] 期望结果与实际结果的比对方式为：
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:72 ] 正则表达式匹配模式。
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:75 ] ========================结束一个接口测试用例==========================
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:32 ] ==============开始执行一个接口测试用例，请求数据如下===============
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:33 ] 接口请求地址：http://47.99.40.208:9010/app/order/createOrderApp
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:34 ] 接口请求类型：post
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:35 ] 接口请求数据为：{"isSure": "true","goodsCode": "651cdf2d1a284761b2c99ecb88dc18e7","goodsHistoryCode": "929120d2bf6e4bb698c3dbc3500530d7","goodsSkuRelCode": "hoursRent","gameCode":"973594c8026f48f68fe10f8ce9a1cdc8","buyType":"2","beginTime":"2018-11-2 23:00:00","finishTime":"2018-11-3 00:00:00","totalAmount":"0.03","goodsAmount":"0.02","pledgeAmount":"0.01","groupName":"时租","show":"false","countTime":"3","description":"温馨提示：交易猫工作人员不会以任何理由在游戏里向所要任何游戏账号、交易猫账号、游戏物品等。请提防诈骗信息，祝您游戏愉快！"}
+ Thu, 13 Dec 2018 11:24:36  INFO myHeader.py Get_token_session [ line:10 ] {'token': '0006c61e88ab4503b10096c1915d2520', 'cookie': 'SESSION=e438e28d-5cc4-4048-b9d1-1ce5cedc36bb'}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:44 ] {"success":false,"code":"param is empty","message":"预约时间已过期，请重新选择！","data":null}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:46 ] 本次接口请求的状态码为：200
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:47 ] 接口请求的返回数据为：
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:48 ] {"success":false,"code":"param is empty","message":"预约时间已过期，请重新选择！","data":null}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:59 ] 接口请求的期望数据为：
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:60 ] {"success":false.*}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:61 ] 期望结果与实际结果的比对方式为：
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:72 ] 正则表达式匹配模式。
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:75 ] ========================结束一个接口测试用例==========================
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:32 ] ==============开始执行一个接口测试用例，请求数据如下===============
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:33 ] 接口请求地址：http://47.99.40.208:9010/app/order/createOrderApp
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:34 ] 接口请求类型：post
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:35 ] 接口请求数据为：{"isSure": "true","goodsCode": "651cdf2d1a284761b2c99ecb88dc18e7","goodsHistoryCode": "929120d2bf6e4bb698c3dbc3500530d7","goodsSkuRelCode": "hoursRent","gameCode":"973594c8026f48f68fe10f8ce9a1cdc8","buyType":"2","beginTime":"2018-11-2 23:00:00","finishTime":"2018-11-3 00:00:00","totalAmount":"0.03","goodsAmount":"0.02","pledgeAmount":"100","groupName":"时租","show":"false","countTime":"3","description":"温馨提示：交易猫工作人员不会以任何理由在游戏里向所要任何游戏账号、交易猫账号、游戏物品等。请提防诈骗信息，祝您游戏愉快！"}
+ Thu, 13 Dec 2018 11:24:36  INFO myHeader.py Get_token_session [ line:10 ] {'token': '50db74fc7ee742caa7d6806a1e503f04', 'cookie': 'SESSION=ebcfd1b6-f9de-4425-8cf9-2c2a8e14fb12'}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:44 ] {"success":false,"code":"param is empty","message":"预约时间已过期，请重新选择！","data":null}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:46 ] 本次接口请求的状态码为：200
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:47 ] 接口请求的返回数据为：
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:48 ] {"success":false,"code":"param is empty","message":"预约时间已过期，请重新选择！","data":null}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:59 ] 接口请求的期望数据为：
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:60 ] {"success":false.*}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:61 ] 期望结果与实际结果的比对方式为：
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:72 ] 正则表达式匹配模式。
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:75 ] ========================结束一个接口测试用例==========================
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:32 ] ==============开始执行一个接口测试用例，请求数据如下===============
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:33 ] 接口请求地址：http://47.99.40.208:9010/app/order/createOrderApp
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:34 ] 接口请求类型：post
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:35 ] 接口请求数据为：{"isSure": "true","goodsCode": "af5d472ff9404a958285d21a66549816","goodsHistoryCode": "929120d2bf6e4bb698c3dbc3500530d7","goodsSkuRelCode": "hoursRent","gameCode":"973594c8026f48f68fe10f8ce9a1cdc8","buyType":"2","beginTime":"2018-11-2 23:00:00","finishTime":"2018-11-3 00:00:00","totalAmount":"0.03","goodsAmount":"0.02","pledgeAmount":"100","groupName":"时租","show":"false","countTime":"3","description":"温馨提示：交易猫工作人员不会以任何理由在游戏里向所要任何游戏账号、交易猫账号、游戏物品等。请提防诈骗信息，祝您游戏愉快！"}
+ Thu, 13 Dec 2018 11:24:36  INFO myHeader.py Get_token_session [ line:10 ] {'token': 'b54c2ef061884e919760aadc12523415', 'cookie': 'SESSION=8c47e7db-8b88-44d8-946e-69995eba0891'}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:44 ] {"success":false,"code":"param is empty","message":"预约时间已过期，请重新选择！","data":null}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:46 ] 本次接口请求的状态码为：200
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:47 ] 接口请求的返回数据为：
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:48 ] {"success":false,"code":"param is empty","message":"预约时间已过期，请重新选择！","data":null}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:59 ] 接口请求的期望数据为：
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:60 ] {"success":false.*}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:61 ] 期望结果与实际结果的比对方式为：
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:72 ] 正则表达式匹配模式。
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:75 ] ========================结束一个接口测试用例==========================
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:32 ] ==============开始执行一个接口测试用例，请求数据如下===============
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:33 ] 接口请求地址：http://47.99.40.208:9010/app/order/createOrderApp
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:34 ] 接口请求类型：post
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:35 ] 接口请求数据为：{"isSure": "true","goodsCode": "af5d472ff9404a958285d21a66549816","goodsHistoryCode": "929120d2bf6e4bb698c3dbc3500530d7","goodsSkuRelCode": "hoursRent","gameCode":"973594c8026f48f68fe10f8ce9a1cdc8","buyType":"2","beginTime":"","finishTime":"","totalAmount":"0.03","goodsAmount":"0.02","pledgeAmount":"100","groupName":"时租","show":"false","countTime":"3","description":"温馨提示：交易猫工作人员不会以任何理由在游戏里向所要任何游戏账号、交易猫账号、游戏物品等。请提防诈骗信息，祝您游戏愉快！"}
+ Thu, 13 Dec 2018 11:24:36  INFO myHeader.py Get_token_session [ line:10 ] {'token': '226327c28a1c48b684cb182bb1ff9903', 'cookie': 'SESSION=6a99c4bc-ba67-4d06-baf2-27d93d42f2c5'}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:44 ] {"success":false,"code":"param is empty","message":"请选择预约开始和结束时间！","data":null}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:46 ] 本次接口请求的状态码为：200
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:47 ] 接口请求的返回数据为：
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:48 ] {"success":false,"code":"param is empty","message":"请选择预约开始和结束时间！","data":null}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:59 ] 接口请求的期望数据为：
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:60 ] {"success":false.*}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:61 ] 期望结果与实际结果的比对方式为：
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:72 ] 正则表达式匹配模式。
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:75 ] ========================结束一个接口测试用例==========================
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:32 ] ==============开始执行一个接口测试用例，请求数据如下===============
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:33 ] 接口请求地址：http://47.99.40.208:9010/app/order/createOrderApp
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:34 ] 接口请求类型：post
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:35 ] 接口请求数据为：{"isSure": "true","goodsCode": "651cdf2d1a284761b2c99ecb88dc18e7","goodsHistoryCode": "929120d2bf6e4bb698c3dbc3500530d7","goodsSkuRelCode": "hoursRent","gameCode":"973594c8026f48f68fe10f8ce9a1cdc8","buyType":"2","beginTime":"2018-11-2 23:00:00","finishTime":"2018-11-3 00:00:00","totalAmount":"0.03","goodsAmount":"","pledgeAmount":"100","groupName":"时租","show":"false","countTime":"3","description":"温馨提示：交易猫工作人员不会以任何理由在游戏里向所要任何游戏账号、交易猫账号、游戏物品等。请提防诈骗信息，祝您游戏愉快！"}
+ Thu, 13 Dec 2018 11:24:36  INFO myHeader.py Get_token_session [ line:10 ] {'token': 'a74e174f73d4478daa47451ac8583e02', 'cookie': 'SESSION=c05afc60-6e43-4641-b051-fe76a97cfe8c'}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:44 ] {"success":false,"code":"param is empty","message":"预约时间已过期，请重新选择！","data":null}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:46 ] 本次接口请求的状态码为：200
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:47 ] 接口请求的返回数据为：
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:48 ] {"success":false,"code":"param is empty","message":"预约时间已过期，请重新选择！","data":null}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:59 ] 接口请求的期望数据为：
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:60 ] {"success":false.*}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:61 ] 期望结果与实际结果的比对方式为：
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:72 ] 正则表达式匹配模式。
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:75 ] ========================结束一个接口测试用例==========================
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:32 ] ==============开始执行一个接口测试用例，请求数据如下===============
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:33 ] 接口请求地址：http://47.99.40.208:9010/app/order/createOrderApp
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:34 ] 接口请求类型：post
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:35 ] 接口请求数据为：{"isSure": "true","goodsCode": "651cdf2d1a284761b2c99ecb88dc18e7","goodsHistoryCode": "929120d2bf6e4bb698c3dbc3500530d7","goodsSkuRelCode": "hoursRent","gameCode":"973594c8026f48f68fe10f8ce9a1cdc8","buyType":"2","beginTime":"2018-11-7 23:00:00","finishTime":"2018-11-8 00:00:00","totalAmount":"0.02","goodsAmount":"0.01","pledgeAmount":"","groupName":"时租","show":"false","countTime":"3","description":"温馨提示：交易猫工作人员不会以任何理由在游戏里向所要任何游戏账号、交易猫账号、游戏物品等。请提防诈骗信息，祝您游戏愉快！"}
+ Thu, 13 Dec 2018 11:24:36  INFO myHeader.py Get_token_session [ line:10 ] {'token': '12c5dc0c8fd540dd8bf61ace30bfcb8a', 'cookie': 'SESSION=0c61b44b-4cbe-425b-9136-0b16a483472c'}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:44 ] {"success":false,"code":"param is empty","message":"预约时间已过期，请重新选择！","data":null}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:46 ] 本次接口请求的状态码为：200
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:47 ] 接口请求的返回数据为：
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:48 ] {"success":false,"code":"param is empty","message":"预约时间已过期，请重新选择！","data":null}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:59 ] 接口请求的期望数据为：
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:60 ] {"success":false.*}
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:61 ] 期望结果与实际结果的比对方式为：
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:72 ] 正则表达式匹配模式。
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:75 ] ========================结束一个接口测试用例==========================
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:32 ] ==============开始执行一个接口测试用例，请求数据如下===============
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:33 ] 接口请求地址：http://47.99.40.208:9010/app/order/createOrderApp
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:34 ] 接口请求类型：post
+ Thu, 13 Dec 2018 11:24:36  INFO test_add.py test1 [ line:35 ] 接口请求数据为：{"isSure": "true","goodsCode": "651cdf2d1a284761b2c99ecb88dc18e7","goodsHistoryCode": "929120d2bf6e4bb698c3dbc3500530d7","goodsSkuRelCode": "hoursRent","gameCode":"973594c8026f48f68fe10f8ce9a1cdc8","buyType":"2","beginTime":"2018-11-7 23:00:00","finishTime":"2018-11-8 00:00:00","totalAmount":"","goodsAmount":"0.01","pledgeAmount":"0.01","groupName":"时租","show":"false","countTime":"3","description":"温馨提示：交易猫工作人员不会以任何理由在游戏里向所要任何游戏账号、交易猫账号、游戏物品等。请提防诈骗信息，祝您游戏愉快！"}
+ Thu, 13 Dec 2018 11:24:36  INFO myHeader.py Get_token_session [ line:10 ] {'token': 'cfc129174cc24fecb8a762acf9f3675b', 'cookie': 'SESSION=31c471e2-a2c3-45c2-b420-e0f57c98514c'}
+ Thu, 13 Dec 2018 11:24:37  INFO test_add.py test1 [ line:44 ] {"success":false,"code":"param is empty","message":"预约时间已过期，请重新选择！","data":null}
+ Thu, 13 Dec 2018 11:24:37  INFO test_add.py test1 [ line:46 ] 本次接口请求的状态码为：200
+ Thu, 13 Dec 2018 11:24:37  INFO test_add.py test1 [ line:47 ] 接口请求的返回数据为：
+ Thu, 13 Dec 2018 11:24:37  INFO test_add.py test1 [ line:48 ] {"success":false,"code":"param is empty","message":"预约时间已过期，请重新选择！","data":null}
+ Thu, 13 Dec 2018 11:24:37  INFO test_add.py test1 [ line:59 ] 接口请求的期望数据为：
+ Thu, 13 Dec 2018 11:24:37  INFO test_add.py test1 [ line:60 ] {"success":false.*}
+ Thu, 13 Dec 2018 11:24:37  INFO test_add.py test1 [ line:61 ] 期望结果与实际结果的比对方式为：
+ Thu, 13 Dec 2018 11:24:37  INFO test_add.py test1 [ line:72 ] 正则表达式匹配模式。
+ Thu, 13 Dec 2018 11:24:37  INFO test_add.py test1 [ line:75 ] ========================结束一个接口测试用例==========================
+ Thu, 13 Dec 2018 11:24:37  INFO test_add.py test1 [ line:32 ] ==============开始执行一个接口测试用例，请求数据如下===============
+ Thu, 13 Dec 2018 11:24:37  INFO test_add.py test1 [ line:33 ] 接口请求地址：http://47.99.40.208:9010/app/order/createOrderApp
+ Thu, 13 Dec 2018 11:24:37  INFO test_add.py test1 [ line:34 ] 接口请求类型：post
+ Thu, 13 Dec 2018 11:24:37  INFO test_add.py test1 [ line:35 ] 接口请求数据为：{"isSure": "true","goodsCode": "651cdf2d1a284761b2c99ecb88dc18e7","goodsHistoryCode": "929120d2bf6e4bb698c3dbc3500530d7","goodsSkuRelCode": "hoursRent","gameCode":"973594c8026f48f68fe10f8ce9a1cdc8","buyType":"2","beginTime":"2018-11-7 23:00:00","finishTime":"2018-11-8 00:00:00","totalAmount":"0.02","goodsAmount":"0.01","pledgeAmount":"0.01","groupName":"时租","show":"false","countTime":"3","description":"请提防诈骗信息，祝您游戏愉快！"}
+ Thu, 13 Dec 2018 11:24:37  INFO myHeader.py Get_token_session [ line:10 ] {'token': 'c7c658b7f1ad470690d6c59d14047866', 'cookie': 'SESSION=4e5063b3-51f3-4272-8aac-4cc7cd809a06'}
+ Thu, 13 Dec 2018 11:24:37  INFO test_add.py test1 [ line:44 ] {"success":false,"code":"param is empty","message":"预约时间已过期，请重新选择！","data":null}
+ Thu, 13 Dec 2018 11:24:37  INFO test_add.py test1 [ line:46 ] 本次接口请求的状态码为：200
+ Thu, 13 Dec 2018 11:24:37  INFO test_add.py test1 [ line:47 ] 接口请求的返回数据为：
+ Thu, 13 Dec 2018 11:24:37  INFO test_add.py test1 [ line:48 ] {"success":false,"code":"param is empty","message":"预约时间已过期，请重新选择！","data":null}
+ Thu, 13 Dec 2018 11:24:37  INFO test_add.py test1 [ line:59 ] 接口请求的期望数据为：
+ Thu, 13 Dec 2018 11:24:37  INFO test_add.py test1 [ line:60 ] {"success":false.*}
+ Thu, 13 Dec 2018 11:24:37  INFO test_add.py test1 [ line:61 ] 期望结果与实际结果的比对方式为：
+ Thu, 13 Dec 2018 11:24:37  INFO test_add.py test1 [ line:72 ] 正则表达式匹配模式。
+ Thu, 13 Dec 2018 11:24:37  INFO test_add.py test1 [ line:75 ] ========================结束一个接口测试用例==========================
